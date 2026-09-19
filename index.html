@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Attendance Management System</h1>
+
+        <!-- Add Student -->
+        <div class="form-box">
+            <h2>Add Student</h2>
+
+            <input type="text" id="studentName" placeholder="Student Name">
+            <input type="text" id="rollNumber" placeholder="Roll Number">
+
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <!-- Student Table -->
+        <div class="table-box">
+            <h2>Student Attendance</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Name</th>
+                        <th>Present</th>
+                        <th>Absent</th>
+                        <th>Total Classes</th>
+                        <th>Attendance</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                    <!-- Students will appear here -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
